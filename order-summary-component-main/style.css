@@ -19,7 +19,7 @@ a {
 
 main {
   width: 85%;
-  max-width: 370px;
+  max-width: 450px;
   min-width: 300px;
   border-radius: 20px;
   background: white;
@@ -34,7 +34,7 @@ main {
 }
 main img {
   width: 100%;
-  max-width: 370px;
+  max-width: 4500px;
   border-radius: 20px 20px 0 0;
 }
 main h1 {
@@ -54,7 +54,7 @@ main .info__pay {
   background-color: #f5f7ff;
   margin: auto 25px;
   border-radius: 20px;
-  padding: 10px 5px;
+  padding: 20px 5px;
   display: flex;
   justify-content: space-between;
   text-align: center;

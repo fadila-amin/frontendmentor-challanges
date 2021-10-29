@@ -40,6 +40,10 @@ h1 {
   color: #f2f2f2;
 }
 
+.preview-card p {
+  min-height: 100px;
+}
+
 .preview-card .btn {
   text-decoration: none;
   padding: 5px 10px;
@@ -79,7 +83,7 @@ h1 {
   color: #004241;
 }
 
-@media screen and (min-width: 711px) {
+@media screen and (min-width: 500px) {
   .preview {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

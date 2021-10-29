@@ -1,0 +1,90 @@
+$clr-pmr-1 : hsl(185, 75%, 39%)
+$clr-pmr-2 : hsl(229, 23%, 23%)
+$clr-pmr-3 : hsl(227, 10%, 46%)
+$clr-ntr : hsl(0, 0%, 59%)
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+$ft : 'Kumbh Sans', sans-serif
+
+*
+    margin: 0
+    padding: 0
+
+body
+    background: linear-gradient(43deg, rgba(25,162,174,1) 14%, rgba(0,212,255,1) 100%)
+    min-height: 100vh
+    display: flex
+    .bg
+        position: fixed
+ 
+        &-top
+            // background-image: url('./images/bg-pattern-top.svg')
+            top: -480px
+            right: 50%
+            z-index: -1
+        &-bottom
+            // background-image: url('./images/bg-pattern-bottom.svg')
+            top: 45%
+            left: 45%
+            
+            z-index: -1
+
+.card
+    position: relative
+    min-width: 300px
+    max-width: 360px
+    width: 95%
+    background-color: white
+    margin: auto auto
+    font-family: $ft
+    font-weight: 400
+    border-radius: 15px
+    box-shadow: 10px 10px 10px #53535f1c
+    &-head
+        width: 100.2%
+        height: 150px
+        border-radius: 15px 15px 0 0
+        margin: -1px 0 0 -0.6px
+    &-photo
+        border-radius: 100%
+        border: solid 5px white
+        position: absolute
+        transform: translate(-50%,-50%)
+        top: 150px
+        left: 50%
+    &-body
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-profile
+            margin-top: 50px
+            text-align: center
+            .name
+                font-size: 22px
+                font-weight: 700
+                color: $clr-pmr-2
+                .prof-det
+                    margin-left: 5px
+            .prof-det
+                color: $clr-pmr-3
+    
+        &-stats
+            width: 100%
+            margin-top: 20px
+            border-top: solid 1px #413b3b25
+            display: flex
+            padding: 20px 0
+            justify-content: space-evenly
+            .stat
+                text-align: center
+                &-num
+                    font-weight: 700
+                    font-size: 22px
+                    color: $clr-pmr-2
+                    margin: 0 auto
+                &-lab
+                    font-size: 10px
+                    color: $clr-pmr-3
+                    letter-spacing: 2px
+
+            

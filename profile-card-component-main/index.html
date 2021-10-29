@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      z-index: 9;
+      transform: translateX(-50%);
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./images/bg-pattern-top.svg" class="bg bg-top" alt=" "></img>
+  <img src="./images/bg-pattern-bottom.svg" alt=" " class="bg bg-bottom"></img>
+  <section class="card">
+    <img class="card-head" src="./images/bg-pattern-card.svg" alt="bg-card" srcset="">
+    <img class="card-photo" src="./images/image-victor.jpg" alt="profile picture" srcset="">
+    <div class="card-body">
+      <div class="card-body-profile">
+        <h6 class="name">Victor Crest <span class="prof-det">26</span></h6>
+        <div class="prof-det">London</div>
+      </div>
+  
+      <div class="card-body-stats">
+        <div class="stat">
+          <div class="stat-num">80K</div>
+          <div class="stat-lab">Followers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">803K</div>
+          <div class="stat-lab">Likes</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1.4K</div>
+          <div class="stat-lab">Photos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <aside class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </aside>
+</body>
+
+</html>

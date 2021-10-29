@@ -1,0 +1,73 @@
+$clr-prm-1 : hsl(31, 77%, 52%)
+$clr-prm-2 : hsl(184, 100%, 22%)
+$clr-prm-3 : hsl(179, 100%, 13%)
+$clr-scd   : hsl(0, 0%, 95%)
+$clr-phar  : hsla(0, 0%, 100%, 0.75)
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap')
+$ft-phar : 'Lexend Deca', sans-serif
+$ft-head : 'Big Shoulders Display', cursive
+html,body
+    margin: 0
+    padding: 0
+
+body
+    background-color: $clr-scd
+    font-size: 15px
+    font-family: $ft-phar
+    min-height: 100vh
+    width: auto
+    padding: 3em 0
+h1
+    font-family: $ft-head
+
+.preview
+    margin: 0 auto
+    min-width: 350px
+    width: 90%
+    max-width: 865px
+
+    display: flex
+    flex-direction: column
+    // border-radius: 10px
+
+    &-card
+        padding: 40px
+        color: $clr-phar
+        h1
+            color: $clr-scd
+        .btn
+            text-decoration: none
+            padding: 5px 10px
+            background-color: $clr-scd
+            border-radius: 20px
+        &:first-child
+            border-radius: 10px 10px 0 0
+            
+        &:last-child
+            border-radius: 0 0 10px 10px
+        &:nth-child(1)
+            background-color: $clr-prm-1
+            .btn
+                color: $clr-prm-1
+        &:nth-child(2)
+            background-color: $clr-prm-2
+            .btn
+                color: $clr-prm-2
+        &:nth-child(3)
+            background-color: $clr-prm-3
+            .btn
+                color: $clr-prm-3
+        
+
+@media screen and (min-width:375px) 
+
+    .preview
+        flex-direction: row
+        
+        &-card
+            min-height: 100px
+            &:first-child
+                border-radius: 10px 0 0 10px
+            &:last-child
+                border-radius: 0 10px 10px 0

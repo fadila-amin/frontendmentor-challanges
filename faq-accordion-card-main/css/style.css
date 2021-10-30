@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  min-height: 100vh;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+.faq-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 325px;
+  min-height: 200px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: white;
+  color: #1d1e35;
+  padding-top: 50px;
+}
+
+.faq-card-illus {
+  background: url("../images/illustration-woman-online-mobile.svg") no-repeat;
+  background-size: contain;
+  width: 75%;
+  aspect-ratio: 12 / 9;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  -webkit-filter: drop-shadow(0 10px 3px #38343452);
+          filter: drop-shadow(0 10px 3px #38343452);
+}
+
+.faq-card-side {
+  display: none;
+}
+
+.faq-card-main {
+  width: 95%;
+}
+
+.faq-card-head {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.faq-card-body {
+  margin: 30px 20px;
+}
+
+.faq-card-body details {
+  display: block;
+  padding: 10px 0;
+  border-bottom: solid 1px #e7e7e9;
+}
+
+.faq-card-body details summary {
+  list-style: none;
+}
+
+.faq-card-body details summary .icon-arrow {
+  float: right;
+}
+
+.faq-card-body details:hover {
+  color: #f47c57;
+}
+
+.faq-card-body details[open] {
+  padding: 10px 0 0 0;
+  color: #787887;
+}
+
+.faq-card-body details[open] summary {
+  color: #4a4b5e;
+  font-weight: 700;
+}
+
+.faq-card-body details[open] summary .icon-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (min-width: 650px) {
+  .faq-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 0;
+    margin-right: -200px;
+  }
+  .faq-card-head {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .faq-card-illus {
+    display: none;
+  }
+  .faq-card-side {
+    display: block;
+    width: 50%;
+    margin-right: 50px;
+  }
+  .faq-card-side .woman {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: -50px;
+    -webkit-filter: drop-shadow(0 10px 3px #38343452);
+            filter: drop-shadow(0 10px 3px #38343452);
+  }
+  .faq-card-side .box {
+    width: 100px;
+    position: absolute;
+    top: 37%;
+    left: -52px;
+    z-index: 99;
+  }
+  .faq-card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq-card-body details {
+    width: 100%;
+  }
+  .faq-card-body details[open] {
+    max-width: 225px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

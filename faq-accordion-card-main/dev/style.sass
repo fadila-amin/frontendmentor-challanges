@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+$ft : 'Kumbh Sans', sans-serif
+$ft-size : 12px
+
+$clr-txt-1 : hsl(238, 29%, 16%)
+$clr-txt-2 : hsl(14, 88%, 65%)
+
+$clr-dtl-1 : hsl(237, 12%, 33%)
+$clr-dtl-2 : hsl(240, 6%, 50%)
+
+$line-divdider : hsl(240, 5%, 91%)
+
+$bg-gradient-1 : hsl(273, 75%, 66%)
+$bg-gradient-2 : hsl(240, 73%, 65%)
+
+*
+    padding: 0
+
+body
+    background: linear-gradient($bg-gradient-1,$bg-gradient-2)
+    min-height: 100vh
+    position: relative
+    font-family: $ft
+    font-size: $ft-size
+
+
+.faq-card
+    
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    
+    min-width: 325px
+    min-height: 200px
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+    border-radius: 15px
+    background-color: white
+    color: $clr-txt-1
+    padding-top: 50px
+    &-illus
+        background: url('../images/illustration-woman-online-mobile.svg') no-repeat
+        background-size: contain
+        width: 75%
+        aspect-ratio: 12 / 9
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%,-60%)
+        filter: drop-shadow(0 10px 3px #38343452)
+    &-side
+        display: none
+
+    &-main
+        width: 95%
+    &-head
+        text-align: center
+        font-size: 25px
+        font-weight: 700
+    &-body
+        margin: 30px 20px
+        details
+            display: block
+            
+            padding: 10px 0
+            border-bottom: solid 1px $line-divdider
+            summary
+                list-style: none
+                .icon-arrow
+                    float: right
+            &:hover
+                color: $clr-txt-2
+        details[open]
+            padding: 10px 0 0 0
+            color: $clr-dtl-2
+            summary
+                color: $clr-dtl-1
+                font-weight: 700
+                .icon-arrow
+                    transform: rotate(180deg)
+           
+
+        
+@media (min-width: 650px)
+    .faq-card
+        flex-direction: row
+        padding-top: 0
+        // overflow: hidden
+        margin-right: -200px
+        
+        &-head
+            text-align: left
+            padding-left: 20px
+        &-illus
+            display: none
+        &-side
+            display: block
+            width: 50%
+            margin-right: 50px
+            
+
+            .woman
+                position: relative
+                width: 300px
+                height: 200px
+                margin: -50px
+                filter: drop-shadow(0 10px 3px #38343452)
+            .box
+                width: 100px
+                position: absolute
+                top: 37%
+                left: -52px
+                z-index: 99
+                
+        &-body
+            
+            display: flex
+            flex-direction: column
+            justify-content: center
+            
+            details
+                width: 100%
+            
+            details[open]
+                max-width: 225px
